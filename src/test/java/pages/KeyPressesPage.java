@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class KeyPressesPage extends AbstractPage {
@@ -11,7 +12,7 @@ public class KeyPressesPage extends AbstractPage {
     @FindBy(id = "result")
     private WebElement enteredValue;
 
-    public KeyPressesPage(WebDriver driver) {
+    public KeyPressesPage(RemoteWebDriver driver) {
         super(driver);
     }
 

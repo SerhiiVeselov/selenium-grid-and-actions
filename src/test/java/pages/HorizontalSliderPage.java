@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class HorizontalSliderPage extends AbstractPage {
@@ -13,7 +14,7 @@ public class HorizontalSliderPage extends AbstractPage {
     @FindBy(id = "range")
     private WebElement sliderValue;
 
-    public HorizontalSliderPage(WebDriver driver) {
+    public HorizontalSliderPage(RemoteWebDriver driver) {
         super(driver);
     }
 

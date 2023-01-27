@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class MainPage extends AbstractPage {
@@ -12,7 +13,7 @@ public class MainPage extends AbstractPage {
     @FindBy(xpath = "//input")
     private WebElement inputField;
 
-    public MainPage(WebDriver driver) {
+    public MainPage(RemoteWebDriver driver) {
         super(driver);
     }
 

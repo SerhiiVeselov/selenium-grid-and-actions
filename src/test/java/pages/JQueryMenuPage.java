@@ -4,6 +4,7 @@ import com.sun.source.tree.IfTree;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -20,7 +21,7 @@ public class JQueryMenuPage extends AbstractPage {
     @FindBy(id = "ui-id-7")
     private WebElement cSvFileType;
 
-    public JQueryMenuPage(WebDriver driver) {
+    public JQueryMenuPage(RemoteWebDriver driver) {
         super(driver);
     }
 
